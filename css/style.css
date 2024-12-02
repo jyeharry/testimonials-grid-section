@@ -1,0 +1,51 @@
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4.5rem;
+
+  --gutter: var(--space-lg);
+  --flex-gap: var(--space-md);
+
+  --colour: var(--very-dark-blackish-blue);
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+  color: var(--colour);
+}
+
+hgroup > h2,
+body {
+  font-size: 0.8125rem;
+}
+
+b,
+h3 {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+blockquote {
+  color: hsl(from --colour h s l / 0.7);
+}
+
+hgroup > p {
+  color: hsl(from --colour h s l / 0.5);
+}
+
+.grid {
+  gap: var(--gutter);
+  padding-inline: var(--gutter);
+  padding-block: var(--space-xl);
+}
