@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
   color: var(--base-colour);
   background: var(--light-grayish-blue);
@@ -24,6 +24,8 @@ body {
 }
 
 b,
+h1,
+h2,
 h3 {
   font-weight: 600;
 }
@@ -58,7 +60,7 @@ hgroup > p {
 }
 
 .bg-dark-gray {
-  background: var(--very-dark-grayish-blue); 
+  background: var(--very-dark-grayish-blue);
 }
 
 .bg-dark-black-blue {
@@ -74,16 +76,35 @@ hgroup > p {
 }
 
 .bg-light-gray-blue {
-  background: var(--light-grayish-blue); 
+  background: var(--light-grayish-blue);
 }
 
 /* Block */
 .card {
   --flow-space: var(--space-md);
+  --card-bg: var(--white);
+  --card-colour: var(--very-dark-grayish-blue);
+
   padding-block: 1.5rem;
   padding-inline: var(--space-md);
-  background: var(--white);
   border-radius: 0.5rem;
+  color: var(--card-colour);
+  background: var(--card-bg);
+
+  &[data-variant="dark-gray"] {
+    --card-bg: var(--very-dark-grayish-blue);
+    --card-colour: var(--white);
+  }
+
+  &[data-variant="black-blue"] {
+    --card-bg: var(--very-dark-blackish-blue);
+    --card-colour: var(--white);
+  }
+
+  &[data-variant="violet"] {
+    --card-bg: var(--moderate-violet);
+    --card-colour: var(--white);
+  }
 }
 
 .user-tag {
