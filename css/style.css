@@ -7,12 +7,12 @@
   --light-gray: hsl(0, 0%, 81%);
   --light-grayish-blue: hsl(210, 46%, 95%);
 
-  --space-md: 1rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xl: 4.5rem;
 
-  --gutter: var(--space-lg);
-  --flex-gap: var(--space-md);
+  --gutter: var(--space-md);
 }
 
 body {
@@ -81,12 +81,12 @@ hgroup > p {
 
 /* Block */
 .card {
-  --flow-space: var(--space-md);
+  --flow-space: var(--space-sm);
   --card-bg: var(--white);
   --card-colour: var(--very-dark-grayish-blue);
 
   padding-block: 1.5rem;
-  padding-inline: var(--space-md);
+  padding-inline: var(--space-lg);
   border-radius: 0.5rem;
   color: var(--card-colour);
   background: var(--card-bg);
@@ -109,6 +109,7 @@ hgroup > p {
 
 .user-tag {
   display: flex;
+  gap: 1rem;
 
   .user-tag__img {
     border-radius: 50%;
