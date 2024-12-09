@@ -99,6 +99,7 @@ hgroup > p {
   border-radius: 0.5rem;
   color: var(--card-colour);
   background: var(--card-bg);
+  box-shadow: 40px 60px 50px -47px #48556a40;
 
   &[data-show-bg-img="true"] {
     background-image: url("../images/bg-pattern-quotation.svg");
